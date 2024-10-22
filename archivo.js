@@ -54,9 +54,9 @@
     // Listener para detectar el uso de la rueda del ratón
     window.addEventListener('wheel', function(event) {
         if (event.deltaY < 0) {
-            scaleFactor += 0.05;  // Alejar (scroll hacia arriba)
+            scaleFactor += 0.01;  // Alejar (scroll hacia arriba)
         } else if (event.deltaY > 0) {
-            scaleFactor -= 0.05;  // Acercar (scroll hacia abajo)
+            scaleFactor -= 0.01;  // Acercar (scroll hacia abajo)
         }
 
         // Limitar el factor de escala
